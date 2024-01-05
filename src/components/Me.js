@@ -38,7 +38,7 @@ export default function Me() {
 
   return (
     <>
-      <header className="bg-[#00053B] h-full fixed w-[300px]">
+      <header className="bg-[#000623] h-full fixed w-[300px]">
         <div className="flex flex-row items-center justify-around ">
           <div className=" mt-[2rem]">
             <img
@@ -102,9 +102,7 @@ export default function Me() {
             </div>
             <div className="flex flex-col  gap-[6px]">
               <span className="my-info text-[#a1a1aa]">Location</span>
-              <span className="my-info text-[#a1a1aa] ">
-                Punjab, Pakistan
-              </span>
+              <span className="my-info text-[#a1a1aa] ">Punjab, Pakistan</span>
             </div>
           </div>
           <hr className=" w-[230px] h-[2px] bg-[#a1a1aa] rounder-[4%]" />

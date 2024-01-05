@@ -1,7 +1,8 @@
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import Introduction from "./Introduction";
-import github from "../images/github.png";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function AboutMe() {
   const [text] = useTypewriter({
@@ -26,32 +27,31 @@ export default function AboutMe() {
       <div className="  mt-[2rem] ml-[8rem] flex flex-col items-center justify-end text-white">
         <div className="introduction">
           <div className="paragraph">
-            <h1 className="font-Lato text-[3rem] font-black">
-              Hello, I&apos;m{" "}
-              <span className="Saba">
-                Saba Ahmad
-              </span>
+            <h1 className="font-Lato text-slate-300 text-[3rem] font-black">
+              Hello, I&apos;m <span className="text-slate-300">Saba Ahmad</span>
             </h1>
-            <h2 className="font-Inter font-blacl text-[1.8rem]">
+            <h2 className="font-Inter text-[2rem] font-black text-neutral-300 font-blacl text-[1.8rem]">
               A<span> {text} </span>
               <Cursor
+                className="text-neutral-300"
                 cursorBlinking="false"
                 cursorStyle="|"
-                cursorColor="#FFD700"
               />
             </h2>
             <Introduction />
             <div className="flex flex-row gap-[1rem] items-center mt-[1rem]">
               <div className="w-[12px] h-[12px] bg-[#0f0] rounded-[50%] mr-[5px] inline-block " />
 
-              <span className="new-projects">Available for New Projects</span>
+              <span className="text-neutral-300">
+                Available for New Projects
+              </span>
             </div>
             <div className="collaborate">
-              <img
-                src={github}
+              <FontAwesomeIcon
+                icon={faGithub}
+                style={{ color: "#a1a1aa" }}
                 onClick={handleGithub}
-                alt="github"
-                className="h-[32px] w-[32px] mt-[1rem]"
+                className="h-[32px] w-[32px] mt-[1rem] "
               />
             </div>
           </div>

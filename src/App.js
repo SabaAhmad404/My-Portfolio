@@ -1,14 +1,17 @@
 import "./App.css";
 import Me from "./components/Me";
 import Navbar from "./components/Navbar";
-import backgroundImage from "../src/images/11.jpg";
+import backgroundImage from "../src/images/newrr.jpg";
 import AboutMe from "./components/AboutMe";
+import WorkSkills from "./components/WorkSkills";
 
 function App() {
   return (
     <>
       <div className="flex flex-row">
-      <div><Me /></div>
+        <div>
+          <Me />
+        </div>
 
         <div className="flex flex-col w-screen bg-gray-800  ">
           <div
@@ -20,10 +23,10 @@ function App() {
             className="h-screen"
           >
             <Navbar />
-            <AboutMe/>
+            <AboutMe />
           </div>
-          <div className="h-[1000px]  bg-gray-800">
-            <p className="text-white">its second div</p>
+          <div className="h-screen bg-cyan-100">
+            <WorkSkills/>
           </div>
         </div>
       </div>
