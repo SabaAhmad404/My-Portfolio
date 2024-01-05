@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
+import React, { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 
 const TimeZone = ({ timeZoneOffset }) => {
-  const [currentTime, setCurrentTime] = useState('');
+  const [currentTime, setCurrentTime] = useState("");
 
   useEffect(() => {
     const updateCurrentTime = () => {
@@ -11,11 +11,13 @@ const TimeZone = ({ timeZoneOffset }) => {
 
       const hours = timeInTimeZone.getUTCHours();
       const minutes = timeInTimeZone.getUTCMinutes();
-      const amOrPm = hours >= 12 ? 'PM' : 'AM';
+      const amOrPm = hours >= 12 ? "PM" : "AM";
 
-      const formattedHours = (hours % 12 || 12).toString().padStart(2, '0'); // Convert to 12-hour format
+      const formattedHours = (hours % 12 || 12).toString().padStart(2, "0"); // Convert to 12-hour format
 
-      const formattedTime = `${formattedHours}:${minutes.toString().padStart(2, '0')} ${amOrPm}`;
+      const formattedTime = `${formattedHours}:${minutes
+        .toString()
+        .padStart(2, "0")} ${amOrPm}`;
       setCurrentTime(formattedTime);
     };
 
@@ -34,12 +36,8 @@ const TimeZone = ({ timeZoneOffset }) => {
   return (
     <div>
       <p className="my-info text-[#a1a1aa]">
-        {currentTime}
-        {' '}
-        (GMT
-        {' '}
-        {timeZoneOffset < 0 ? '-' : '+'}
-        {Math.abs(timeZoneOffset).toString().padStart(2, '0')}
+        {currentTime} (GMT {timeZoneOffset < 0 ? "-" : "+"}
+        {Math.abs(timeZoneOffset).toString().padStart(2, "0")}
         :00)
       </p>
     </div>

@@ -10,11 +10,11 @@ import smile from "../images/smile.jpeg";
 import TimeZone from "./TimeZone";
 
 export default function Me() {
-  const handleFaceBook = () => {
-    const faceBookURL =
-      "https://web.facebook.com/profile.php?id=100023964162678";
-    window.open(faceBookURL, "blank");
-  };
+  // const handleFaceBook = () => {
+  //   const faceBookURL =
+  //     "https://web.facebook.com/profile.php?id=100023964162678";
+  //   window.open(faceBookURL, "blank");
+  // };
 
   const handleTwitter = () => {
     const twitterURL = "https://twitter.com/SabaAhmad00";
@@ -38,7 +38,7 @@ export default function Me() {
 
   return (
     <>
-      <header className="bg-slate-950 h-full fixed w-[300px]">
+      <header className="bg-[#00053B] h-full fixed w-[300px]">
         <div className="flex flex-row items-center justify-around ">
           <div className=" mt-[2rem]">
             <img
@@ -102,14 +102,14 @@ export default function Me() {
             </div>
             <div className="flex flex-col  gap-[6px]">
               <span className="my-info text-[#a1a1aa]">Location</span>
-              <span className="my-info text-[#a1a1aa] text-sm">
+              <span className="my-info text-[#a1a1aa] ">
                 Punjab, Pakistan
               </span>
             </div>
           </div>
           <hr className=" w-[230px] h-[2px] bg-[#a1a1aa] rounder-[4%]" />
 
-          <div className="flex justify-center items-center gap-[20px] mt-[5rem]">
+          <div className="flex justify-center items-center gap-[20px] mt-[3rem]">
             <button type="button">
               <FontAwesomeIcon
                 icon={faLinkedinIn}
