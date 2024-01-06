@@ -6,6 +6,10 @@ import AboutMe from "./components/AboutMe";
 import WorkSkills from "./components/WorkSkills";
 import Education from "./components/Education";
 import education from "./images/education.jpg"
+import Services from "./components/Services";
+import service from "./images/finalbg.jpg"
+import Projects from "./components/Projects";
+import blue from "./images/blue.jpg"
 function App() {
   return (
     <>
@@ -37,6 +41,23 @@ function App() {
            className="h-screen">
             <Education/>
           </div>
+          <div  style={{
+              backgroundImage: `url(${service})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+           className="h-screen " >
+            <Services/>
+          </div>
+          <div style={{
+  backgroundImage: `url(${blue})`,
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundRepeat: "repeat",
+}} className="h-screen">
+  <Projects/>
+</div>
+
         </div>
       </div>
     </>
