@@ -19,7 +19,7 @@ export default function WorkSkills() {
   return (
     <>
       <div className=" mt-[2rem] ">
-        <h1 className="ml-[9rem] text-cyan-900 font-Inter font-black text-[30px] flex items-center justify-center">
+        <h1 className="ml-[13rem] text-slate-900 font-Inter font-black text-[30px] flex items-center justify-center">
           Technologies I Used
         </h1>
 

@@ -4,7 +4,8 @@ import Navbar from "./components/Navbar";
 import backgroundImage from "../src/images/newrr.jpg";
 import AboutMe from "./components/AboutMe";
 import WorkSkills from "./components/WorkSkills";
-
+import Education from "./components/Education";
+import education from "./images/education.jpg"
 function App() {
   return (
     <>
@@ -25,8 +26,16 @@ function App() {
             <Navbar />
             <AboutMe />
           </div>
-          <div className="h-screen bg-cyan-100">
+          <div className="h-screen bg-cyan-100 ">
             <WorkSkills/>
+          </div>
+          <div  style={{
+              backgroundImage: `url(${education})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+           className="h-screen">
+            <Education/>
           </div>
         </div>
       </div>
