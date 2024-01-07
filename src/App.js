@@ -62,7 +62,7 @@ function App() {
               backgroundPosition: "center",
               backgroundRepeat: "repeat",
             }}
-            className="h-screen"
+            className="h-[600px]"
           >
             <Projects />
           </div>

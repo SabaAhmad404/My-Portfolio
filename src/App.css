@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Lato:wght@300;400;700;900&family=League+Gothic&family=Pacifico&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 
 .animate-move {
-    animation: move 2s ease-in-out infinite;
+    animation: move 4s ease-in-out infinite;
   }
 
   @keyframes move {
