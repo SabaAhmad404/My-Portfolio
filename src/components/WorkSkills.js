@@ -14,6 +14,7 @@ import { BsBootstrapFill } from "react-icons/bs";
 import { SiTailwindcss } from "react-icons/si";
 import { FaUbuntu } from "react-icons/fa";
 import { SiJest } from "react-icons/si";
+import "../App.css"
 
 export default function WorkSkills() {
   return (
