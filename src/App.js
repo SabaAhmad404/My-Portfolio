@@ -11,28 +11,34 @@ import service from "./images/finalbg.jpg";
 import Projects from "./components/Projects";
 import blue from "./images/blue.jpg";
 import ContactUs from "./components/ContactUs";
+import Header from "./components/Header";
 
 function App() {
   return (
     <>
       <div className="flex flex-row">
-        <div>
+        <div className=" hidden lg:block">
           <Me />
         </div>
 
-        <div className="flex flex-col w-screen bg-gray-800  ">
+        <div className="flex flex-col lg:w-screen  max-sm:w-[375px] bg-gray-800   ">
           <div
             style={{
               backgroundImage: `url(${backgroundImage})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
-            className="h-screen"
+            className="lg:h-screen h-[500px]"
           >
-            <Navbar />
+            <div className="hidden max-sm:block">
+              <Header />
+            </div>
+            <div className="hidden lg:block">
+              <Navbar />
+            </div>
             <AboutMe />
           </div>
-          <div className="h-screen bg-[#e8edec] ">
+          <div className="lg:h-screen max-sm:h-[500px]  bg-[#e8edec] ">
             <WorkSkills />
           </div>
           <div
@@ -67,9 +73,8 @@ function App() {
             <Projects />
           </div>
 
-          <div  
-            className="h-[700px] bg-[#e8edec]">
-            <ContactUs/>
+          <div className="h-[700px] bg-[#e8edec]">
+            <ContactUs />
           </div>
         </div>
       </div>
