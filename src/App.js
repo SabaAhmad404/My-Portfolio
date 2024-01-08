@@ -68,7 +68,7 @@ function App() {
               backgroundPosition: "center",
               backgroundRepeat: "repeat",
             }}
-            className="h-[600px]"
+            className="lg:h-[600px] max-sm:h-[1200px]"
           >
             <Projects />
           </div>

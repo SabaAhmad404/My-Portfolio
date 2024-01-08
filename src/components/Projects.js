@@ -46,12 +46,12 @@ export default function Projects() {
 
   return (
     <>
-      <div className="flex ml-[17rem] items-center justify-center mt-[2rem]">
-        <h1 className="font-black font-Poppins text-[40px] text-gray-200">
+      <div className="flex lg:ml-[17rem] items-center   max-sm:ml-[6rem] lg:justify-center mt-[2rem]">
+        <h1 className="font-black font-Poppins lg:text-[40px] max-sm:text-[20px] text-gray-200">
           My Projects
         </h1>
       </div>
-      <div className="flex flex-row items-center justify-center ml-[19rem] gap-[2rem] mt-[4rem]">
+      <div className="flex lg:flex-row max-sm:flex-col items-center justify-center lg:ml-[19rem] gap-[2rem] mt-[4rem]">
         {projects.map((project, index) => (
           <div
             key={index}
@@ -79,12 +79,12 @@ export default function Projects() {
       </div>
 
       {isPopUpOpen && (
-        <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-sm">
+        <div className="fixed inset-0  flex items-center justify-center bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-sm">
           <div className="bg-white p-8 rounded-lg">
             <div className="flex justify-end">
               <button
                 onClick={closePopUp}
-                className="absolute top-8 right-20 text-gray-200 hover:text-[#94a3b8]"
+                className="absolute lg:top-8 lg:right-20 max-sm:right-[13rem] max-sm:top-[34rem]   text-gray-200 hover:text-[#94a3b8]"
               >
                 <FontAwesomeIcon icon={faCircleXmark} className="h-[2rem]" />
               </button>
@@ -94,7 +94,7 @@ export default function Projects() {
               <>
                 <img
                   src={selectedProject.image}
-                  className="h-[13rem] w-[30rem] object-contain rounded-t-lg mb-4"
+                  className="lg:h-[13rem] lg:w-[30rem] max-sm:h-[4rem] max-sm:w-[13rem] object-contain rounded-t-lg mb-4"
                   alt={selectedProject.title}
                 />
                 <h2 className="text-lg font-Lato font-black text-[20px] text-gray-800 bold">
@@ -102,7 +102,7 @@ export default function Projects() {
                 </h2>
 
                 <div
-                  className="overflow-auto h-[8rem] w-[30rem] text-sm text-gray-600 mt-4"
+                  className="overflow-auto lg:h-[8rem] lg:w-[30rem] max-sm:h-[4rem] max-sm:w-[13rem] text-sm text-gray-600 mt-4"
                   dangerouslySetInnerHTML={{ __html: selectedProject.para }}
                 />
                 <div className="flex flex-row items-center gap-[10px]">
@@ -145,7 +145,7 @@ export default function Projects() {
         </div>
       )}
 
-      <div className="flex items-center justify-center ml-[17rem] mt-[3rem]">
+      <div className="flex items-center justify-center lg:ml-[17rem] mt-[3rem]">
         <p className="font-black font-Lato text-white">
           Check my{" "}
           <a
