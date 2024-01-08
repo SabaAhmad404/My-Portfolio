@@ -52,11 +52,11 @@ const ContactUs = () => {
 
   return (
        
-    <div className="flex flex-col items-center justify-center ml-[17rem] mt-[4rem]">
-        <h1 className="font-black font-Poppins text-slate-950 text-[40px]">Contact With Me</h1>
-        <p className=" font-Inter text-slate-950 mt-[2rem] ">If you want to know more about me or my work, send me a message. I'd love to hear from you.</p>
+    <div className="flex flex-col items-center justify-center lg:ml-[17rem] mt-[4rem]">
+        <h1 className="font-black font-Poppins text-slate-950 lg:text-[40px] max-sm:text-[20px]">Contact With Me</h1>
+        <p className=" font-Inter text-slate-950 mt-[2rem] max-sm:text-[10px] ">If you want to know more about me or my work, send me a message. I'd love to hear from you.</p>
       <form onSubmit={handleSubmit} className=" mt-8">
-        <div className="flex gap-[1rem]">
+        <div className="flex max-sm:flex-col max-sm:items-center max-sm:justify-center gap-[1rem]">
         <div className="mb-4">
         
           <input
@@ -66,7 +66,7 @@ const ContactUs = () => {
             value={formData.name}
             placeholder="Name"
             onChange={handleChange}
-            className="border border-gray-300 rounded px-3 py-2 w-[23rem] h-[3.5rem] "
+            className="border border-gray-300 rounded px-3 py-2 lg:w-[23rem] lg:h-[3.5rem] max-sm:h-[3rem] "
             required
           />
         </div>
@@ -80,7 +80,7 @@ const ContactUs = () => {
             placeholder="Email"
             value={formData.email}
             onChange={handleChange}
-            className="border border-gray-300 rounded px-3 py-2 w-[23rem] h-[3.5rem] "
+            className="border border-gray-300 rounded px-3 py-2 lg:w-[23rem] lg:h-[3.5rem] max-sm:h-[3rem] "
             required
           />
         </div>
@@ -94,7 +94,7 @@ const ContactUs = () => {
             value={formData.message}
             placeholder="Message"
             onChange={handleChange}
-            className="border border-gray-300 rounded px-3 py-2 w-[47rem] h-[18rem] "
+            className="border border-gray-300 rounded px-3 py-2 lg:w-[47rem] lg:h-[18rem] max-sm:w-[18rem] max-sm:h-[10rem] "
             required
           />
         </div>

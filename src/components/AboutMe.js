@@ -24,13 +24,13 @@ export default function AboutMe() {
 
   return (
     <>
-      <div className="  mt-[2rem] ml-[8rem] flex flex-col items-center justify-end text-white">
+      <div className=" lg:mt-[2rem] lg:ml-[8rem] ml-[1rem] mt-[5rem]  flex flex-col lg:items-center lg:justify-center text-white">
         <div className="introduction">
-          <div className="paragraph">
-            <h1 className="font-Lato text-slate-300 text-[3rem] font-black">
+          <div className="flex flex-col gap-[6px]">
+            <h1 className="font-Lato text-slate-300 lg:text-[3rem] text-[23px] font-black">
               Hello, I&apos;m <span className="text-slate-300">Saba Ahmad</span>
             </h1>
-            <h2 className="font-Inter text-[2rem] font-black text-neutral-300 font-blacl text-[1.8rem]">
+            <h2 className="font-Inter lg:text-[2rem] text-[17px]  text-neutral-300 font-black ">
               A<span> {text} </span>
               <Cursor
                 className="text-neutral-300"
@@ -39,10 +39,10 @@ export default function AboutMe() {
               />
             </h2>
             <Introduction />
-            <div className="flex flex-row gap-[1rem] items-center mt-[1rem]">
+            <div className="flex flex-row lg:gap-[9px] gap-[7px] items-center mt-[1rem]">
               <div className="w-[12px] h-[12px] bg-[#0f0] rounded-[50%] mr-[5px] inline-block " />
 
-              <span className="text-neutral-300">
+              <span className="text-neutral-300 text-[14px] max-sm:text-[12px]">
                 Available for New Projects
               </span>
             </div>
@@ -51,7 +51,7 @@ export default function AboutMe() {
                 icon={faGithub}
                 style={{ color: "#a1a1aa" }}
                 onClick={handleGithub}
-                className="h-[32px] w-[32px] mt-[1rem] "
+                className="lg:h-[32px] lg:w-[32px] h-[25px] w-[25px] lg:mt-[1rem] mt-[8px] "
               />
             </div>
           </div>

@@ -20,65 +20,65 @@ export default function WorkSkills() {
   return (
     <>
       <div className=" mt-[2rem] ">
-        <h1 className="ml-[13rem] text-slate-900 font-Inter font-black text-[30px] flex items-center justify-center">
+        <h1 className="lg:ml-[13rem] ml-[4rem] text-slate-900 font-Inter font-black lg:text-[30px] flex lg:items-center lg:justify-center">
           Technologies I Used
         </h1>
 
-        <div className=" animate-move mt-[3rem] grid grid-cols-3 ml-[30rem] gap-[1rem] ">
+        <div className="animate-move mt-[3rem] grid grid-cols-3 lg:ml-[32rem] ml-[8px] gap-[1rem] max-sm:w-[300px] ">
           <FontAwesomeIcon
             icon={faHtml5}
-            className="h-[60px] w-[60px] "
+            className="lg:h-[60px] lg:w-[60px] h-[40px] w-[40px] "
             style={{ color: "#000734" }}
           />
           <FontAwesomeIcon
             icon={faCss3Alt}
-            className="h-[60px] w-[60px] "
+            className="lg:h-[60px] lg:w-[60px] h-[40px] w-[40px] "
             style={{ color: "#000734" }}
           />
           <FontAwesomeIcon
             icon={faJsSquare}
-            className="h-[60px] w-[60px] "
+            className="lg:h-[60px] lg:w-[60px] h-[40px] w-[40px]  "
             style={{ color: "#000734" }}
           />
           <FontAwesomeIcon
             icon={faReact}
-            className="h-[60px] w-[60px] "
+            className="lg:h-[60px] lg:w-[60px] h-[40px] w-[40px]  "
             style={{ color: "#000734" }}
           />
-          <SiRedux className="h-[60px] w-[60px]" style={{ color: "#000734" }} />
+          <SiRedux className="lg:h-[60px] lg:w-[60px] h-[40px] w-[40px] " style={{ color: "#000734" }} />
           <BiLogoPostgresql
-            className="h-[60px] w-[60px]"
+            className="lg:h-[60px] lg:w-[60px] h-[40px] w-[40px] "
             style={{ color: "#000734" }}
           />
           <DiRubyRough
-            className="h-[60px] w-[60px]"
+            className="lg:h-[60px] lg:w-[60px] h-[40px] w-[40px] "
             style={{ color: "#000734" }}
           />
           <SiWebpack
-            className="h-[60px] w-[60px]"
+            className="lg:h-[60px] lg:w-[60px] h-[40px] w-[40px] "
             style={{ color: "#000734" }}
           />
           <SiRubyonrails
-            className="h-[60px] w-[60px]"
+            className="lg:h-[60px] lg:w-[60px] h-[40px] w-[40px] "
             style={{ color: "#000734" }}
           />
           <FaGitAlt
-            className="h-[60px] w-[60px]"
+            className="lg:h-[60px] lg:w-[60px] h-[40px] w-[40px] "
             style={{ color: "#000734" }}
           />
           <BsBootstrapFill
-            className="h-[60px] w-[60px]"
+            className="lg:h-[60px] lg:w-[60px] h-[40px] w-[40px] "
             style={{ color: "#000734" }}
           />
           <SiTailwindcss
-            className="h-[60px] w-[60px]"
+            className="lg:h-[60px] lg:w-[60px] h-[40px] w-[40px] "
             style={{ color: "#000734" }}
           />
           <FaUbuntu
-            className="h-[60px] w-[60px]"
+            className="lg:h-[60px] lg:w-[60px] h-[40px] w-[40px] "
             style={{ color: "#000734" }}
           />
-          <SiJest className="h-[60px] w-[60px]" style={{ color: "#000734" }} />
+          <SiJest className="lg:h-[60px] lg:w-[60px] h-[40px] w-[40px] " style={{ color: "#000734" }} />
         </div>
       </div>
     </>
